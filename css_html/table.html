@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form_name{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+            .form_name label{
+                display: block;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .form_name input{
+                padding: 5px;
+                width:100%;
+            }
+    </style>
+</head>
+<body>
+    <!-- <table border="2">
+       <tr>
+        <th colspan="4">Student Details:</th>
+       </tr>
+       <tr>
+        <td rowspan="2">college</td>
+        <td>Miraj</td>
+        <td>mahesh</td>
+        <td>101</td>
+       </tr>
+       <tr>
+        <td>Sangli</td>
+        <td>Shreya</td>
+        <td>102</td>
+       </tr>
+    </table> -->
+    <div>
+
+        <form>
+            <input type="checkbox" value="HTML"/>
+            <label>HTML</label>
+            <label>Enter disk value:</label>
+            <meter value="2" min="0" max="10">2 out of 10</meter>
+            <progress value="32" max="100">32%</progress>
+            <p id="item">THis is fontSize </p>
+            <select onclick="backGround(this.value)">
+                <option>20px</option>
+                <option>25px</option>
+            </select>
+            <!-- <div>
+                <label>Username</label>
+                <input type="text" id="username" placeholder="enter your name:" required/>
+            </div>
+            <div>
+                <label>Username</label>
+                <input type="text" id="username" placeholder="enter your name:" required/>
+            </div>
+            <div>
+                <label>Username</label>
+                <input type="text" id="username" placeholder="enter your name:" required/>
+            </div>
+            <div>
+                <label>Username</label>
+                <input type="text" id="username" placeholder="enter your name:" required/>
+            </div>
+            <div>
+                <label>Username</label>
+                <input type="text" id="username" placeholder="enter your name:" required/>
+            </div> -->
+        </form>
+    </div>
+    <script>
+        function backGround(e){
+            document.getElementById('item').style.fontSize=e;
+        }
+    </script>
+</body>
+</html>
